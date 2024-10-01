@@ -1,0 +1,157 @@
+/* General Styles for the Order History Page */
+/* .order-con {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.order-box {
+    width: 100%;
+    height: 93%;
+    display: flex;
+}
+.user {
+    width: 20%;
+    height: 100%;
+}
+.purchase {
+    width: 80%;
+    height: 100%;
+    background-color: #fbf9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.purchase-box {
+    width: 95%;
+    height: 94%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.purchase-header {
+    width: 100%;
+    text-align: center;
+}
+.purchase-body {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.purchase-btncon {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.purchase-btncon button {
+    width: 15%;
+    height: 40px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.purchase-btncon button:hover {
+    background-color: #2980b9;
+}
+.purchase-btncon button:focus {
+    outline: none;
+    background-color: #2980b9;
+}
+.order {
+    width: 100%;
+    height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.order-item {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+.order-item h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.order-item p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+.order-item h5 {
+    font-size: 16px;
+    color: #555;
+    margin-top: 15px;
+}
+.product-details {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+} */
+/* Scrollbar Styles */
+.order::-webkit-scrollbar {
+    width: 8px;
+}
+.order::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .purchase-btncon button {
+        width: 24%;
+    }
+
+    .order-con {
+        flex-direction: column;
+    }
+
+    .order-box {
+        flex-direction: column;
+
+    }
+
+    .user {
+        width: 100%;
+    }
+
+    .purchase {
+        width: 100%;
+    }
+
+    .order-item {
+        width: 90%;
+    }
+}
+.cancel-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.cancel-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+} 

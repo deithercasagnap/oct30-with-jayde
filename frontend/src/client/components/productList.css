@@ -1,0 +1,228 @@
+/* productList.css */
+
+.product-list {
+    padding: 10px;
+    font-size: 0.9em;
+}
+.product-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    margin: 5px;
+    width: 180px;
+    /* General size for product cards */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    /* Slightly scale up on hover */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+.product-card h3:nth-of-type(2),
+/* For price */
+.product-card h3:nth-of-type(3) {
+    /* For discounted price */
+    color: #007bff;
+}
+
+.product-card button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.product-card button:hover {
+    background-color: #218838;
+    /* Darker green on hover */
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 250px;
+    margin: 10px auto;
+}
+
+.pagination button {
+    padding: 6px 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+
+/* General modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Product styles */
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-details {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-discount {
+    color: red;
+    font-weight: bold;
+}
+
+/* Button styles */
+.product-list button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Recommendations section */
+.recommendations {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.recommended-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+    background-color: #28a745;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+    background-color: #218838;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination button:hover:not(.active) {
+    background-color: #d1d1d1;
+}

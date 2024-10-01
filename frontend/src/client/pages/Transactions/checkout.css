@@ -1,0 +1,152 @@
+/* Checkout container styling */
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+/* Checkout form styling */
+.checkout-form {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.checkout-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Product summary styling */
+.product-summary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.product-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.quantity-input {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Total price styling */
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+/* Form styling */
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #333;
+}
+
+/* Payment method styling */
+.payment-method {
+    margin-bottom: 20px;
+}
+
+.payment-method label {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Checkout button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+button:hover:not(:disabled) {
+    background-color: #555;
+}
+
+/* Error and success messages */
+.error-message {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}

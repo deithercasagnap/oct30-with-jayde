@@ -1,0 +1,141 @@
+/* Shop.css */
+
+.shop-container {
+    padding: 0px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+.category-section {
+    margin-bottom: 30px;
+}
+
+.category-title {
+    margin-top: 20px;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+.filter-section{
+    font-size: 1.5em;
+}
+
+.shopproduct-list {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shopproduct-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shopproduct-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.shopproduct-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.shopproduct-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.shopproduct-img:hover img {
+    transform: scale(1.05);
+}
+
+.shopproduct-desc {
+    padding: 15px;
+}
+
+.shopproduct-name {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0;
+    color: #222;
+}
+
+.shopproduct-quantity,
+.shopproduct-price,
+.shopproduct-brand {
+    margin: 5px 0;
+}
+
+.shopproduct-price {
+    color: #e60023;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.shopproduct-brand {
+    font-style: italic;
+    color: #777;
+}
+
+.add-to-cart-button,
+.buy-now-button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.add-to-cart-button:hover,
+.buy-now-button:hover {
+    background-color: #0056b3;
+}
+
+.shoppagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.shoppagination button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.shoppagination button:hover {
+    background-color: #0056b3;
+}
+
+.shoppagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.shoppagination span {
+    align-self: center;
+    margin: 0 10px;
+    font-size: 1.1em;
+    color: #333;
+}

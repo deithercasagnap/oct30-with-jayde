@@ -1,0 +1,122 @@
+
+.login-con{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 188, 223);
+}
+
+.login-box{
+    width: 70%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 6px 6px 27px #dea0c7,
+                -6px -6px 27px #dea0c7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.login-form{
+    /* background-color: aquamarine; */
+    width: 45%;
+    height: 90%;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-form .login-google{
+    width: 100%;
+    height: 25%;
+    /* background-color: cadetblue; */
+}
+.login-google > form{
+    width: 100%;
+    height: 100%;
+}
+.login-google > form > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-google > form > div > button{
+    background-color: white;
+    color: black;
+    padding: 7px;
+    border: 1px solid hotpink;
+    border-radius: 5px;
+    height: 50%;
+}
+.login-google > form > div > div{
+    width: 100%;
+    text-align: center;
+    font-size: 10pt;
+    color: rgba(45, 45, 45, 0.81);
+    
+}
+.login-form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.login-form form button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+.login-form > form > .input{
+    margin: 5px;
+    /* background-color: blue; */
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    outline: none;
+    border: none ;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    transition: ease-in 0.2s;
+}
+.input input:focus{
+    border-bottom: 2px solid black;
+    font-size: 11pt;
+}
+.login-form h1{
+    font-size: 2rem;
+}
+.login-image{
+    width: 45%;
+    height: 95%;
+    /* background-color: cadetblue; */
+}
+.login-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+a{
+    color: rgb(6, 99, 220);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.error{
+    transition: ease 1.5s;
+}
