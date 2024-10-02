@@ -18,11 +18,11 @@ const ProductCard = React.memo(({ product, onAddToCart, onBuyNow, onProductClick
         <div className="product-card" onClick={() => onProductClick(product)}>
             <img src={product.product_image} alt={product.product_name} />
             <h3>{product.product_name}</h3>
-            <p>{product.description || 'No description available.'}</p>
+            {/* <p>{product.description || 'No description available.'}</p> */}
             <p>Product Quantity: {product.quantity}</p>
-            <h3>P{product.price}</h3>
+            <h3>₱{product.price}</h3>
             {product.product_status === 'Discounted' && (
-                <h3>Discounted Price: P{(product.price * (1 - product.product_discount / 100)).toFixed(2)}</h3>
+                <h3>Discounted Price: ₱{(product.price * (1 - product.product_discount / 100)).toFixed(2)}</h3>
             )}
             {isOutOfStock ? (
                 <p style={{ color: 'red' }}>Out of Stock</p>

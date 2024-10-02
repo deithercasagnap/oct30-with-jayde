@@ -154,7 +154,7 @@ const Shop = () => {
                             <div className='shopproduct-desc'>
                                 <p className='shopproduct-name'>{product.product_name || 'No product name'}</p>
                                 <p className='shopproduct-quantity'>Quantity: {product.quantity}</p>
-                                <p className='shopproduct-price'>Price: ${product.price}</p>
+                                <p className='shopproduct-price'>Price: ₱{product.price}</p>
                                 {product.product_status === 'Discounted' && (
                                     <p className='shopproduct-price'>Product Discount: P{product.product_discount}%</p>
                                 )}
@@ -206,7 +206,7 @@ const Shop = () => {
                                 <div className='shopproduct-desc'>
                                     <p className='shopproduct-name'>{product.product_name || 'No product name available'}</p>
                                     <p className='shopproduct-quantity'>Quantity: {product.quantity !== undefined ? product.quantity : 'N/A'}</p>
-                                    <p className='shopproduct-price'>Price: ${product.price !== undefined ? product.price.toFixed(2) : 'N/A'}</p>
+                                    <p className='shopproduct-price'>Price: ₱{product.price !== undefined ? product.price.toFixed(2) : 'N/A'}</p>
 
                                     {product.product_status === 'Discounted' && (
                                         <p className='shopproduct-discount'>Discount: {product.product_discount}%</p>
@@ -267,7 +267,7 @@ const Shop = () => {
                         <div className='shopproduct-desc'>
                             <p className='shopproduct-name'>{product.product_name || 'No product name'}</p>
                             <p className='shopproduct-quantity'>Quantity: {product.quantity}</p>
-                            <p className='shopproduct-price'>Price: P{product.price}</p>
+                            <p className='shopproduct-price'>Price: ₱{product.price}</p>
                             {product.product_status === 'Discounted' && (
                                 <p className='shopproduct-price'>Product Discount: P{product.product_discount}%</p>
                             )}

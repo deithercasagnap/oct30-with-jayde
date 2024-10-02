@@ -16,6 +16,9 @@ const authenticateToken = async (req, res, next) => {
         if (rows.length === 0) {
             return res.status(401).json({ message: 'Invalid or expired token' });
         }
+//final na ni
+//mag pokpok nako
+//eeyyyy eeyyyyy eyyyyy
 
         req.user_id = rows[0].user_id; // Attach user_id to request object
         next(); // Proceed to the next middleware/route
